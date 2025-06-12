@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import Card from "../components/Card";
+import { specialtiesArray, storyArray } from "../data/constants";
 
 const Home = () => {
   return (
@@ -18,83 +20,51 @@ const Home = () => {
           <Link to="/menu">See Our Menu</Link>
         </div>
       </div>
-      <div className="story-container">
-        <div className="home-section-title">
+      <div className="container story">
+        <div className="container-title">
           <h2>Our Story</h2>
           <p>
             Three generations of passion, tradition, and innovation in every
             bite
           </p>
         </div>
-        <div className="story-section">
-          <section>
-            <img src="./plant.svg" alt="" />
-            <h3>Fresh Ingredients</h3>
-            <p>
-              We source only the finest organic ingredients from local farms to
-              ensure every product meets our high standards.
-            </p>
-          </section>
-          <section>
-            <img src="./clock.svg" alt="" />
-            <h3>Traditional Methods</h3>
-            <p>
-              Our time-honored baking techniques have been perfected over
-              decades, creating authentic flavors and textures.
-            </p>
-          </section>
-          <section>
-            <img src="./heart.svg" alt="" />
-            <h3>Made with Love</h3>
-            <p>
-              Every item is crafted with care and attention to detail, ensuring
-              exceptional quality in every single bite.
-            </p>
-          </section>
+        <div className="section">
+          {storyArray.map((item) => (
+            <Card
+              imageSrc={item.imageSrc}
+              imageStyle={{
+                backgroundColor: "#f5f1eb",
+                padding: 20,
+                borderRadius: 16,
+                width: 35,
+              }}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
-      <div className="specialties-container">
-        <div className="home-section-title specialties">
+      <div className="container specialties">
+        <div className="container-title specialties-title">
           <h2>Our Specialties</h2>
           <p>Handcrafted daily with passion and precision</p>
         </div>
-        <div className="specialties-section">
-          <section>
-            <img src="./bread.jpg" alt="" />
-            <h3>Artisan Breads</h3>
-            <p>
-              Traditional sourdough, whole grain, and specialty breads baked
-              fresh daily.
-            </p>
-          </section>
-          <section>
-            <img src="./pastries.jpg" alt="" />
-            <h3>French Pastries</h3>
-            <p>
-              Delicate croissants, pain au chocolat, and classic French
-              pastries.
-            </p>
-          </section>
-          <section>
-            <img src="./cakes.jpg" alt="" />
-            <h3>Custom Cakes</h3>
-            <p>
-              Beautiful custom cakes for weddings, birthdays, and special
-              occasions.
-            </p>
-          </section>
-          <section>
-            <img src="./drinks.jpg" alt="" />
-            <h3>Specialty Drinks</h3>
-            <p>
-              Enjoy expertly brewed coffee, artisan teas, and refreshing
-              seasonal beverages to pair with your favorite treats.
-            </p>
-          </section>
+        <div className="section">
+          {specialtiesArray.map((item) => (
+            <Card
+              className="specialties-card"
+              imageSrc={item.imageSrc}
+              imageStyle={{
+                width: 150,
+              }}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
-      <div className="reviews-container">
-        <div className="home-section-title">
+      <div className="container reviews">
+        <div className="container-title">
           <h2>What Our Customers Say</h2>
           <p>Thousands of happy customers can't be wrong</p>
         </div>
@@ -199,7 +169,6 @@ const Home = () => {
             width="100%"
             height="400"
             style={{ border: 0 }}
-            allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

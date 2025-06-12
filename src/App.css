@@ -2,6 +2,47 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 5rem;
+
+ 
+}
+
+.container-title {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-title h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #2c1810;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.container-title p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  color: #4b5563;
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
 @keyframes slideDownFade {
   0% {
     opacity: 0;

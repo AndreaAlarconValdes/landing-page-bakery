@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Card from "../components/Card";
+import { processArray, teamArray, valuesArray } from "../data/constants";
 import "./About.css";
 
 const About = () => {
@@ -72,111 +75,76 @@ const About = () => {
           <img src="./chef-bakery.png" alt="" />
         </section>
       </div>
-      <div className="values-container">
-        <div className="home-section-title">
+      <div className="container values">
+        <div className="container-title">
           <h2>Our Values</h2>
           <p>The principles that guide everything we do</p>
         </div>
-        <div className="story-section values">
-          <section>
-            <img src="./award.svg" alt="" />
-            <h3>Fresh Ingredients</h3>
-            <p>
-              We source only the finest organic ingredients from local farms to
-              ensure every product meets our high standards.
-            </p>
-          </section>
-          <section>
-            <img src="./heart.svg" alt="" />
-            <h3>Traditional Methods</h3>
-            <p>
-              Our time-honored baking techniques have been perfected over
-              decades, creating authentic flavors and textures.
-            </p>
-          </section>
-          <section>
-            <img src="./team.svg" alt="" />
-            <h3>Made with Love</h3>
-            <p>
-              Every item is crafted with care and attention to detail, ensuring
-              exceptional quality in every single bite.
-            </p>
-          </section>
+        <div className="section ">
+          {valuesArray.map((item) => (
+            <Card
+              className="values-card"
+              imageSrc={item.imageSrc}
+              imageStyle={{
+                width: 35,
+              }}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
-      <div className="team-container">
-        <div className="home-section-title">
+      <div className="container team">
+        <div className="container-title">
           <h2>Meet Our Team</h2>
           <p>The passionate artisans behind every delicious creation</p>
         </div>
-        <div className="team-section">
-          <section>
-            <img src="./team(03).webp" alt="" />
-            <h4>Marco Rossi</h4>
-            <h5>Head Baker & Owner</h5>
-            <p>
-              Third-generation baker carrying on the family tradition with
-              passion and innovation.
-            </p>
-          </section>
-          <section>
-            <img src="./team(01).jpg" alt="" />
-            <h4>Marta Chen</h4>
-            <h5>Pastry Chef</h5>
-            <p>
-              Award-winning pastry chef specializing in French techniques and
-              artistic dessert presentations.
-            </p>
-          </section>
-          <section>
-            <img src="./team(02).webp" alt="" />
-            <h4>Antonio Rivera</h4>
-            <h5>Bread Master</h5>
-            <p>
-              Artisan bread specialist with 12+ years of experience in
-              traditional European baking methods.
-            </p>
-          </section>
+        <div className="section">
+          {teamArray.map((item) => (
+            <Card
+              className="team-card"
+              imageSrc={item.imageSrc}
+              imageStyle={{
+                width: 300,
+                height: 200,
+                objectFit: "cover",
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+              }}
+              title={item.title}
+              subtitle={item.subtitle}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
-      <div className="process-container">
-        <div className="home-section-title">
+      <div className="container process">
+        <div className="container-title">
           <h2>Our Process</h2>
           <p>From grain to golden perfection - how we create magic</p>
         </div>
-        <div className="story-section">
-          <section>
-            <img src="./plant.svg" alt="" />
-            <h3>Premium Ingredients</h3>
-            <p>
-              We source only the finest organic flours, fresh dairy, and
-              seasonal ingredients from trusted local suppliers.
-            </p>
-          </section>
-          <section>
-            <img src="./clock.svg" alt="" />
-            <h3>Handcrafted</h3>
-            <p>
-              Every item is carefully crafted by hand using traditional
-              techniques passed down through generations.
-            </p>
-          </section>
-          <section>
-            <img src="./heart.svg" alt="" />
-            <h3>Perfect Baking</h3>
-            <p>
-              Our master bakers use precise timing and temperature control to
-              achieve the perfect texture and flavor.
-            </p>
-          </section>
-          <section>
-            <img src="./star.svg" alt="" />
-            <h3>Fresh Daily</h3>
-            <p>
-              Everything is baked fresh daily, ensuring you always get the
-              highest quality and best taste possible.
-            </p>
-          </section>
+        <div className="section">
+          {processArray.map((item) => (
+            <Card
+              imageSrc={item.imageSrc}
+              imageStyle={{
+                width: 35,
+              }}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="visit-footer">
+        <h2>Ready to Taste Our Story?</h2>
+        <p>
+          Visit us today and experience the passion, tradition, and quality that
+          makes Artisan Bakery special. Every bite tells our story.
+        </p>
+        <div className="visit-links">
+          <a href="">Visit Our Bakery</a>
+          <Link to="/menu">View Our Menu</Link>
         </div>
       </div>
     </div>

@@ -21,7 +21,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.header-description-title,.header-description-paragraph{
+.header-description-title,
+.header-description-paragraph {
   z-index: 1;
   color: white;
   margin: 0;
@@ -48,12 +49,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   color: white;
   -webkit-color: white;
-  border: none;
   border-radius: 25px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   padding: 12px 30px;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 
   animation: slideUpFade 1s ease forwards;
   animation-delay: 0.6s;
@@ -62,118 +62,31 @@
 .header-description a:hover {
   background-color: #d4a574;
   scale: 1.1;
-
 }
 
-.home-section-title {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.home-section-title h2 {
-  font-size: 36px;
-  margin: 0;
-  color: #2c1810;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-}
-
-.home-section-title p {
-  font-size: 22px;
-  color: #4b5563;
-  margin: 0;
-}
-
-.story-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  padding: 2rem 5rem;
-
+.story{
   animation: scaleUp linear both;
   animation-timeline: scroll(root block);
   animation-range: 0px 200px;
 }
 
-.story-container p {
-  color: #4b5563;
-  margin: 0;
-}
-
-.story-container h3 {
-  margin: 0;
-  color: #2c1810;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.story-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.story-section section {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.story-section section img {
+.specialties {
   background-color: #f5f1eb;
-  padding: 20px;
-  border-radius: 16px;
-  width: 35px;
 }
 
-.story-section section p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.specialties-container {
-  background-color: #f5f1eb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  padding: 3rem 5rem;
-}
-
-.specialties{
+.specialties-title {
   animation: scaleUp linear both;
   animation-timeline: scroll(root block);
   animation-range: 0px 750px;
-
-}
-.specialties-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
 }
 
-
-.specialties-section section {
+.specialties-card {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: white;
   border-radius: 20px;
   width: 250px;
-  height: 350px;
-  padding-bottom: 15px;
+  height: 380px;
+  padding: 1rem 0.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 
@@ -184,49 +97,24 @@
   animation-timeline: scroll(root block);
   animation-range: 0px 900px;
 }
-.specialties-section section:hover {
+.specialties-card:hover {
   scale: 1.1;
 }
 
-.specialties-section section:nth-child(1) {
+.specialties-card:nth-child(1) {
   animation-delay: 0s;
 }
-.specialties-section section:nth-child(2) {
+.specialties-card:nth-child(2) {
   animation-delay: 1s;
 }
-.specialties-section section:nth-child(3) {
+.specialties-card:nth-child(3) {
   animation-delay: 2s;
 }
-.specialties-section section:nth-child(4) {
+.specialties-card:nth-child(4) {
   animation-delay: 3s;
 }
-.specialties-section section img {
-  width: 180px;
-}
 
-.specialties-section section h3 {
-  margin: 0;
-  color: #2c1810;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 22px;
-}
-.specialties-section section p {
-  color: #4b5563;
-  margin: 0;
-  font-size: 18px;
-  margin: 10px 15px;
-  text-align: center;
-}
-
-.reviews-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  padding: 2rem 5rem;
-
+.reviews{
   animation: scaleUp linear both;
   animation-timeline: scroll(root block);
   animation-range: 0px 1300px;
@@ -322,4 +210,3 @@
 .maps-section {
   width: 60%;
 }
-
