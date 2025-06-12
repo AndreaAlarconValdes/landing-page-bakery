@@ -17,6 +17,12 @@
     text-decoration: none;
     color: black;
     -webkit-color: black;
+    transition: .2s ease-in-out;
+}
+.navbar a:hover{
+    color: #d4a574;
+    -webkit-color: #d4a574;
+
 }
 .navbar-logo a{
     display: flex;
@@ -31,7 +37,7 @@
 .navbar-routes{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 
 }
  
@@ -40,6 +46,7 @@
     font-size: 16px;
     font-family: 'Inter', sans-serif;
 }
+
 
 @keyframes enhance-header {
     to {

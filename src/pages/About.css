@@ -1,0 +1,244 @@
+.about-header{
+    background-color: #f5f1eb;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.about-header img{
+    width: 400px;
+    border-radius: 10px;
+
+    animation: slideRightFade 1s ease forwards;
+}
+
+.about-header-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 40%;
+
+    animation: slideLeftFade 1s ease forwards;
+}
+
+.about-header-description h1{
+  color: #2c1810;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 38px;
+  margin: 0;
+
+}
+
+.about-header-description p{
+  color: #374151;
+
+  font-family: "Inter", sans-serif;
+    font-size: 22px;
+  margin: 0;
+
+}
+.about-header-description h1 span{
+  color: #d4a574;
+
+}
+.header-stadistics{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-stadistics div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header-stadistics h3{
+  color: #d4a574;
+
+    font-size: 24px;
+    margin: 0;
+}
+.header-stadistics p{
+    font-size: 16px;
+    margin: 0;
+}
+.timeline-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 5rem;
+}
+.timeline-section{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    
+    animation-name: slideLeftFade;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 500px;
+}
+
+.today{
+  animation-name: slideRightFade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timeline: scroll(root block);
+  animation-range: 0px 900px;
+}
+.timeline-section img{
+    width: 350px;
+    border-radius: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.timeline-section div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.timeline-section h3{
+    color: #2c1810;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.timeline-section p{
+    color: #374151;
+  
+    font-family: "Inter", sans-serif;
+      font-size: 22px;
+    margin: 0;
+  
+  }
+
+  .values-container{
+    background-color: #f5f1eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 5rem;
+
+    
+  }
+
+  .values{
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .values section{
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 280px;
+
+    height: 250px;
+    padding: 2rem 1rem;
+  }
+ 
+  .values section h3{
+    color: #2c1810;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .values section p{
+    color: #374151;
+  
+    font-family: "Inter", sans-serif;
+      font-size: 16px;
+    margin: 0;
+  
+  }
+
+  .team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 5rem; 
+
+    animation: scaleUp linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 1900px;
+  }
+
+  .team-section {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .team-section section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+    border-radius: 20px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .team-section section img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+  }
+
+  .team-section section h4, h5, p{
+    margin: 0;
+  }
+  .team-section section h4{
+    color: #2c1810;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .team-section section h5{
+    color: #d4a574;
+    font-family: "Inter", sans-serif;
+      font-size: 16px;
+  }
+
+  .team-section section p{
+    color: #374151;
+  
+    font-family: "Inter", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      padding: 0rem 1rem 2rem 1rem;
+  }
+
+  .process-container{
+    background-color: #f5f1eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 5rem;
+  }

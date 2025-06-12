@@ -1,0 +1,37 @@
+.contact-header {
+  background-color: #f5f1eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 100px 300px;
+}
+
+.contact-header h1 {
+  color: #2c1810;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 38px;
+  margin: 0;
+  
+  animation: slideDownFade 1s ease forwards;
+  opacity: 0;
+}
+
+.contact-header h1 span {
+  color: #d4a574;
+}
+
+.contact-header p {
+  color: #374151;
+
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  margin: 0;
+  text-align: center;
+
+  animation: slideUpFade 1s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}

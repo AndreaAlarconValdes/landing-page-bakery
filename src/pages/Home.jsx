@@ -1,4 +1,4 @@
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -7,13 +7,15 @@ const Home = () => {
       <div className="header">
         <img src="./bakery-header.jpeg" alt="bakery artisan" />
         <div className="header-description">
-          <h1 className="header-description-title">Fresh Baked Perfection Every Day</h1>
+          <h1 className="header-description-title">
+            Fresh Baked Perfection Every Day
+          </h1>
           <p className="header-description-paragraph">
             Discover our artisanal breads, pastries, and desserts made with the
             finest ingredients and traditional techniques passed down through
             generations.
           </p>
-          <button>See Our Menu</button>
+          <Link to="/menu">See Our Menu</Link>
         </div>
       </div>
       <div className="story-container">
@@ -186,12 +188,9 @@ const Home = () => {
         <div className="contact-section-title">
           <h2>Ready to Taste Perfection?</h2>
           <p>Visit us today</p>
-          <span>Monday - Friday: 6:00 AM - 8:00 PM
-</span>
-          <span>Saturday: 7:00 AM - 9:00 PM
-</span>
-          <span>Sunday: 8:00 AM - 6:00 PM
-</span>
+          <span>Monday - Friday: 6:00 AM - 8:00 PM</span>
+          <span>Saturday: 7:00 AM - 9:00 PM</span>
+          <span>Sunday: 8:00 AM - 6:00 PM</span>
         </div>
         <div className="maps-section">
           <iframe
