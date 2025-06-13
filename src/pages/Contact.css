@@ -54,30 +54,30 @@
   flex-direction: row;
   padding: 2rem;
 }
-.location-map{
+.location-map {
   width: -webkit-fill-available;
   height: 300px;
 }
+
 @media (max-width: 900px) {
-.visit {
-  flex-direction: column;
-}
-
-.contact {
-  padding: 2rem;
-}
-
-.contact-card {
-  width: 200px;
-  height: 200px;
-}
-
-}
-@media (max-width: 750px) {
   .contact-header {
     padding: 80px 40px;
   }
 
+  .visit {
+    flex-direction: column;
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+
+  .contact-card {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 750px) {
   .contact-header h1 {
     font-size: 30px;
   }
@@ -85,7 +85,7 @@
     font-size: 20px;
   }
 
-  .contact{
+  .contact {
     flex-direction: column;
   }
 }

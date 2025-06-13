@@ -1,29 +1,16 @@
-.header {
-  position: relative;
-  width: 100vw;
-}
-
-.header img {
-  z-index: 0;
-  width: 100vw;
-
-  object-fit: cover;
-}
-
-.header-description {
-  position: absolute;
+.home-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  width: 40vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 60vh;
+  background: url("./header.jpg") center/cover no-repeat;
 }
+
 .header-description-title,
 .header-description-paragraph {
-  z-index: 1;
   color: white;
   margin: 0;
   text-align: center;
@@ -31,18 +18,19 @@
   opacity: 0;
 }
 
-.header-description h1 {
+.header-description-title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 36px;
 }
-.header-description p {
+.header-description-paragraph {
   font-family: "Inter", sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
+  padding: 0 300px;
 }
 
-.header-description a {
+.home-header a {
   text-decoration: none;
   cursor: pointer;
   background-color: #2c1810;
@@ -59,7 +47,7 @@
   animation-delay: 0.6s;
   opacity: 0;
 }
-.header-description a:hover {
+.home-header a:hover {
   background-color: #d4a574;
   scale: 1.1;
 }
@@ -193,95 +181,78 @@
     height: 320px;
   }
 
-  .header-description {
-    width: 90vw;
-  }
-  .header-description h1 {
+
+  .header-description-title {
     font-size: 30px;
   }
-  .header-description p {
-    font-size: 18px;
+  .header-description-paragraph {
+    font-size: 20px;
+    padding: 0 40px;
   }
 
-  .header-description a {
-    font-size: 14px;
+  .home-header a {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 750px) {
-  .story{
+  .story {
     flex-direction: column;
   }
 
-  .specialties-section{
+  .specialties-section {
+    gap: 0.5rem;
+  }
+  .specialties-card {
+    width: 170px;
+    height: 250px;
     gap: .5rem;
   }
- .specialties-card{
-  width: 160px;
-  height: 290px;
- }
-  .header-description h1 {
-    font-size: 20px;
-  }
-  .header-description p {
-    font-size: 10px;
-  }
 
-  .header-description a {
-    font-size: 10px;
-  padding: 5px 25px;
-
+  .reviews-section {
+    gap: 0.5rem;
+  }
+  .reviews-section section {
+    padding: 1rem;
+    width: 150px;
+    height: 200px;
   }
 
-.header-description {
-  gap: .5rem;
-}
+  .review-puntuation {
+    display: flex;
+  }
+  .review-puntuation img {
+    width: 16px;
+  }
 
-.reviews-section{
-  gap: .5rem;
-}
-.reviews-section section {
-  padding: 1rem;
-  width: 150px;
-  height: 200px;
-}
+  .reviews-section section p {
+    color: #374151;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+  }
+  .review-puntuation img {
+    width: 14px;
+  }
 
-.review-puntuation {
-  display: flex;
-}
-.review-puntuation img {
-  width: 16px;
-}
+  .costumer-details img {
+    width: 40px;
+  }
 
-.reviews-section section p {
-  color: #374151;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-}
-.review-puntuation img {
-  width: 14px;
-}
+  .costumer-details {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .costumer-details div {
+    gap: 0.5rem;
+  }
 
-.costumer-details img {
-  width: 40px;
-}
+  .costumer-details div h5 {
+    font-size: 16px;
+    margin: 0;
+  }
 
-.costumer-details{
-  justify-content: center;
-  gap: 0.5rem;
-
-}
-.costumer-details div {
-  gap: 0.5rem;
-}
-
-.costumer-details div h5 {
-  font-size: 16px;
-  margin: 0;
-}
-
-.costumer-details div p {
-  font-size: 14px;
-  margin: 0;
-}
+  .costumer-details div p {
+    font-size: 14px;
+    margin: 0;
+  }
 }

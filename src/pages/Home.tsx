@@ -6,9 +6,7 @@ import { specialtiesArray, storyArray } from "../data/constants";
 const Home = () => {
   return (
     <div>
-      <div className="header">
-        <img src="./bakery-header.jpeg" alt="bakery artisan" />
-        <div className="header-description">
+      <div className="home-header">
           <h1 className="header-description-title">
             Fresh Baked Perfection Every Day
           </h1>
@@ -18,7 +16,6 @@ const Home = () => {
             generations.
           </p>
           <Link to="/menu">See Our Menu</Link>
-        </div>
       </div>
       <div className="container ">
         <div className="container-title story">

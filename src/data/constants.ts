@@ -42,7 +42,7 @@ export const specialtiesArray = [
     imageSrc: "./drinks.jpg",
     title: "Specialty Drinks",
     description:
-      "Enjoy expertly brewed coffee, artisan teas, and refreshing seasonal beverages to pair with your favorite treats.",
+      "Enjoy expertly brewed coffee, artisan teas, and refreshing drinks.",
   },
 ];
 
@@ -122,17 +122,17 @@ export const contactArray = [
   {
     imageSrc: "./location.svg",
     title: "Visit Our Bakery",
-    description: "123 Baker Street Artisan City, AC 12345",
+    description: "Dublin, Ireland",
   },
   {
     imageSrc: "./phone.svg",
     title: "Call Us",
-    description: "(555) 123-BAKE",
+    description: "+353 87 217 3094",
   },
   {
     imageSrc: "./email.svg",
     title: "Email Us",
-    description: "hello@artisanbakery.com",
+    description: "alarconvaldes.a@gmail.com",
   },
 ];
 
@@ -165,7 +165,7 @@ export const menuArray = [
     category: "pastries",
     imageSrc: "./pastrie(01).jpg",
     title: "Pistachio Croissant",
-    description: "Delicious croissant filled with pistachio, a real treat!",
+    description: "A buttery, flaky croissant filled with pistachio cream. Each bite offers a perfect balance of delicate pastry layers and the nutty sweetness of premium pistachios, finished with a light dusting of powdered sugar.",
   },
   {
     category: "pastries",
