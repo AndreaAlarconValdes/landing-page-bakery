@@ -48,6 +48,7 @@ const Home = () => {
         </div>
         <div className="specialties-section">
           {specialtiesArray.map((item) => (
+            <Link to="/menu">
             <Card
               className="specialties-card"
               imageSrc={item.imageSrc}
@@ -57,6 +58,7 @@ const Home = () => {
               title={item.title}
               description={item.description}
             />
+            </Link>
           ))}
         </div>
       </div>

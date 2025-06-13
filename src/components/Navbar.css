@@ -5,7 +5,7 @@
   padding: 10px 24px;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 997;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   animation: enhance-header linear both;

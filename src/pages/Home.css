@@ -204,8 +204,8 @@
     gap: 0.5rem;
   }
   .specialties-card {
-    width: 170px;
-    height: 250px;
+    width: 160px;
+    height: 260px;
     gap: .5rem;
   }
 
@@ -214,7 +214,7 @@
   }
   .reviews-section section {
     padding: 1rem;
-    width: 150px;
+    width: 140px;
     height: 200px;
   }
 
@@ -247,12 +247,10 @@
   }
 
   .costumer-details div h5 {
-    font-size: 16px;
-    margin: 0;
+    font-size: 12px;
   }
 
   .costumer-details div p {
-    font-size: 14px;
-    margin: 0;
+    font-size: 10px;
   }
 }

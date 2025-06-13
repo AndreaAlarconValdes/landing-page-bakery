@@ -2,6 +2,9 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -52,6 +55,51 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+
+.contact-header {
+  background-color: #f5f1eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 100px 300px;
+}
+
+.contact-header h1 {
+  color: #2c1810;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 38px;
+  margin: 0;
+  text-align: center;
+
+  animation: slideDownFade 1s ease forwards;
+  opacity: 0;
+}
+
+.contact-header h1 span {
+  color: #d4a574;
+}
+
+.contact-header p {
+  color: #374151;
+
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  margin: 0;
+  text-align: center;
+
+  animation: slideUpFade 1s ease forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.visit {
+  background-color: #f5f1eb;
+  flex-direction: row;
+  padding: 2rem;
 }
 
 @keyframes slideDownFade {
@@ -116,12 +164,18 @@ body {
     gap: 2rem;
   }
 
+  .contact-header {
+    padding: 80px 40px;
+  }
   .container-title h2 {
     font-size: 32px;
   }
 
   .container-title p {
     font-size: 18px;
+  }
+  .visit {
+    flex-direction: column;
   }
 }
 
@@ -136,5 +190,12 @@ body {
 
   .container-title p {
     font-size: 16px;
+  }
+
+  .contact-header h1 {
+    font-size: 30px;
+  }
+  .contact-header p {
+    font-size: 20px;
   }
 }
