@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Menu.css";
 import { CategoryFilter } from "../components/CategoryFilter";
 import { menuArray } from "../data/constants";
-import Card from "../components/Card";
+import Header from "../components/Header";
 
 const Menu = () => {
   const [filter, setFilter] = useState("all items");
@@ -13,16 +13,16 @@ const Menu = () => {
       : menuArray.filter((item) => item.category === filter);
 
   return (
-    <div>
-      <div className="contact-header">
-        <h1>
-          Our Complete <span>Menu</span>
-        </h1>
-        <p>
-          Discover our full range of artisanal breads, pastries, and desserts
-          crafted with love and tradition
-        </p>
-      </div>
+    <>
+      <Header
+        title={
+          <>
+            Our Complete <span>Menu</span>
+          </>
+        }
+        paragraph="Discover our full range of artisanal breads, pastries, and desserts
+        crafted with love and tradition"
+      />
 
       <div className="complete-menu">
         <CategoryFilter
@@ -40,7 +40,7 @@ const Menu = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

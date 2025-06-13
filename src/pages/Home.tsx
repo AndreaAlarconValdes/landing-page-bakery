@@ -2,22 +2,19 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import Card from "../components/Card";
 import { specialtiesArray, storyArray } from "../data/constants";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div>
-      <div className="home-header">
-          <h1 className="header-description-title">
-            Fresh Baked Perfection Every Day
-          </h1>
-          <p className="header-description-paragraph">
-            Discover our artisanal breads, pastries, and desserts made with the
-            finest ingredients and traditional techniques passed down through
-            generations.
-          </p>
-          <Link to="/menu">See Our Menu</Link>
-      </div>
-      <div className="container ">
+    <>
+      <Header
+        hasBackground={true}
+        title="Fresh Baked Perfection Every Day"
+        paragraph="Discover our artisanal breads, pastries, and desserts made with the finest ingredients and traditional techniques passed down through generations."
+        linkText="See Our Menu"
+        linkTo="/menu"
+      />
+      <div className="container">
         <div className="container-title story">
           <h2>Our Story</h2>
           <p>
@@ -25,7 +22,7 @@ const Home = () => {
             bite
           </p>
         </div>
-        <div className="section story">
+        <div className="section">
           {storyArray.map((item) => (
             <Card
               imageSrc={item.imageSrc}
@@ -42,27 +39,27 @@ const Home = () => {
         </div>
       </div>
       <div className="container specialties">
-        <div className="container-title specialties-title">
+        <div className="container-title">
           <h2>Our Specialties</h2>
           <p>Handcrafted daily with passion and precision</p>
         </div>
         <div className="specialties-section">
           {specialtiesArray.map((item) => (
             <Link to="/menu">
-            <Card
-              className="specialties-card"
-              imageSrc={item.imageSrc}
-              imageStyle={{
-                width: 150,
-              }}
-              title={item.title}
-              description={item.description}
-            />
+              <Card
+                className="specialties-card"
+                imageSrc={item.imageSrc}
+                imageStyle={{
+                  width: 150,
+                }}
+                title={item.title}
+                description={item.description}
+              />
             </Link>
           ))}
         </div>
       </div>
-      <div className="container reviews">
+      <div className="container">
         <div className="container-title">
           <h2>What Our Customers Say</h2>
           <p>Thousands of happy customers can't be wrong</p>
@@ -169,7 +166,7 @@ const Home = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-    </div>
+    </>
   );
 };
 

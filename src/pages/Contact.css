@@ -11,10 +11,7 @@
 }
 
 
-.location-map {
-  width: -webkit-fill-available;
-  height: 300px;
-}
+
 
 @media (max-width: 900px) {
   
