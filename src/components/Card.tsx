@@ -17,10 +17,15 @@ const Card: React.FC<CardProps> = ({
   description,
   className = "",
   imageStyle,
+
 }) => {
   return (
     <div className={`card ${className}`}>
-      <img src={imageSrc} alt={title} style={imageStyle} />
+      <img
+        src={imageSrc}
+        alt={title}
+        style={imageStyle}
+      />
       <h3>{title}</h3>
       <h4>{subtitle}</h4>
       <p>{description}</p>

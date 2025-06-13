@@ -26,7 +26,7 @@
   z-index: 1;
   color: white;
   margin: 0;
-
+  text-align: center;
   animation: slideDownFade 1s ease forwards;
   opacity: 0;
 }
@@ -64,20 +64,8 @@
   scale: 1.1;
 }
 
-.story{
-  animation: scaleUp linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0px 200px;
-}
-
 .specialties {
   background-color: #f5f1eb;
-}
-
-.specialties-title {
-  animation: scaleUp linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0px 750px;
 }
 
 .specialties-card {
@@ -89,41 +77,26 @@
   padding: 1rem 0.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-
-  opacity: 0;
-  animation-name: slideUpFade;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-timeline: scroll(root block);
-  animation-range: 0px 900px;
 }
 .specialties-card:hover {
   scale: 1.1;
 }
 
-.specialties-card:nth-child(1) {
-  animation-delay: 0s;
-}
-.specialties-card:nth-child(2) {
-  animation-delay: 1s;
-}
-.specialties-card:nth-child(3) {
-  animation-delay: 2s;
-}
-.specialties-card:nth-child(4) {
-  animation-delay: 3s;
-}
-
-.reviews{
-  animation: scaleUp linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0px 1300px;
-}
-.reviews-section {
-  display: flex;
+.specialties-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   justify-content: center;
   gap: 1rem;
 }
+.reviews-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .reviews-section section {
   display: flex;
   flex-direction: column;
@@ -209,4 +182,106 @@
 }
 .maps-section {
   width: 60%;
+}
+@media (max-width: 1000px) {
+  .reviews-section,
+  .specialties-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specialties-card {
+    width: 250px;
+    height: 320px;
+  }
+
+  .header-description {
+    width: 90vw;
+  }
+  .header-description h1 {
+    font-size: 30px;
+  }
+  .header-description p {
+    font-size: 18px;
+  }
+
+  .header-description a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .story{
+    flex-direction: column;
+  }
+
+  .specialties-section{
+    gap: .5rem;
+  }
+ .specialties-card{
+  width: 160px;
+  height: 290px;
+ }
+  .header-description h1 {
+    font-size: 20px;
+  }
+  .header-description p {
+    font-size: 10px;
+  }
+
+  .header-description a {
+    font-size: 10px;
+  padding: 5px 25px;
+
+  }
+
+.header-description {
+  gap: .5rem;
+}
+
+.reviews-section{
+  gap: .5rem;
+}
+.reviews-section section {
+  padding: 1rem;
+  width: 150px;
+  height: 200px;
+}
+
+.review-puntuation {
+  display: flex;
+}
+.review-puntuation img {
+  width: 16px;
+}
+
+.reviews-section section p {
+  color: #374151;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.review-puntuation img {
+  width: 14px;
+}
+
+.costumer-details img {
+  width: 40px;
+}
+
+.costumer-details{
+  justify-content: center;
+  gap: 0.5rem;
+
+}
+.costumer-details div {
+  gap: 0.5rem;
+}
+
+.costumer-details div h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.costumer-details div p {
+  font-size: 14px;
+  margin: 0;
+}
 }

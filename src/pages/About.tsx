@@ -34,7 +34,7 @@ const About = () => {
         <img src="./bakery.png" alt="" />
       </div>
       <div className="timeline-container">
-        <div className="home-section-title">
+        <div className="container-title">
           <h2>A Legacy of Excellence</h2>
           <p>
             From humble beginnings to becoming the community's favorite bakery
@@ -80,7 +80,7 @@ const About = () => {
           <h2>Our Values</h2>
           <p>The principles that guide everything we do</p>
         </div>
-        <div className="section ">
+        <div className="section values">
           {valuesArray.map((item) => (
             <Card
               className="values-card"
@@ -94,18 +94,17 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div className="container team">
+      <div className="container">
         <div className="container-title">
           <h2>Meet Our Team</h2>
           <p>The passionate artisans behind every delicious creation</p>
         </div>
-        <div className="section">
+        <div className="section team">
           {teamArray.map((item) => (
             <Card
               className="team-card"
               imageSrc={item.imageSrc}
               imageStyle={{
-                width: 300,
                 height: 200,
                 objectFit: "cover",
                 borderTopLeftRadius: 20,
@@ -123,7 +122,7 @@ const About = () => {
           <h2>Our Process</h2>
           <p>From grain to golden perfection - how we create magic</p>
         </div>
-        <div className="section">
+        <div className="process-section">
           {processArray.map((item) => (
             <Card
               imageSrc={item.imageSrc}

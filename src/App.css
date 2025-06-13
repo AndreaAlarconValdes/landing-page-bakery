@@ -8,9 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  padding: 2rem 5rem;
-
- 
+  padding: 2rem 1rem;
 }
 
 .container-title {
@@ -19,6 +17,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  animation: scaleUp linear;
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .container-title h2 {
@@ -27,12 +29,21 @@ body {
   color: #2c1810;
   font-family: "Playfair Display", serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .container-title p {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   color: #4b5563;
+  text-align: center;
+  margin: 0;
+}
+
+.container-title span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #656b74;
   margin: 0;
 }
 
@@ -92,3 +103,38 @@ body {
   }
 }
 
+@keyframes enhance-header {
+  to {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    color: white;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    gap: 2rem;
+  }
+
+  .container-title h2 {
+    font-size: 32px;
+  }
+
+  .container-title p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container-title {
+    gap: 0.5rem;
+  }
+
+  .container-title h2 {
+    font-size: 28px;
+  }
+
+  .container-title p {
+    font-size: 16px;
+  }
+}

@@ -34,14 +34,13 @@
   font-family: "Playfair Display", serif;
 }
 .footer-info {
-  display: flex;
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer-section {
-  flex: 1;
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,3 +93,34 @@
 }
 .social-contact img:hover{
 scale: 1.1;}
+
+@media (max-width: 900px) {
+
+  .footer {
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-info {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+   row-gap: 2rem;
+  }
+
+  .footer-section {
+    gap: .5rem;
+  }
+
+  .footer h3 {
+    font-size: 16px;
+  }
+  
+  .footer p{
+    font-size: 12px;
+  }
+
+  .footer a {
+    font-size: 12px;
+  
+  }
+}

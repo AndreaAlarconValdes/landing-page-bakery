@@ -20,15 +20,15 @@ const Home = () => {
           <Link to="/menu">See Our Menu</Link>
         </div>
       </div>
-      <div className="container story">
-        <div className="container-title">
+      <div className="container ">
+        <div className="container-title story">
           <h2>Our Story</h2>
           <p>
             Three generations of passion, tradition, and innovation in every
             bite
           </p>
         </div>
-        <div className="section">
+        <div className="section story">
           {storyArray.map((item) => (
             <Card
               imageSrc={item.imageSrc}
@@ -49,7 +49,7 @@ const Home = () => {
           <h2>Our Specialties</h2>
           <p>Handcrafted daily with passion and precision</p>
         </div>
-        <div className="section">
+        <div className="specialties-section">
           {specialtiesArray.map((item) => (
             <Card
               className="specialties-card"
@@ -154,25 +154,21 @@ const Home = () => {
           </section>
         </div>
       </div>
-      <div className="contact-container">
-        <div className="contact-section-title">
+      <div className="container visit">
+        <div className="container-title">
           <h2>Ready to Taste Perfection?</h2>
           <p>Visit us today</p>
           <span>Monday - Friday: 6:00 AM - 8:00 PM</span>
           <span>Saturday: 7:00 AM - 9:00 PM</span>
           <span>Sunday: 8:00 AM - 6:00 PM</span>
         </div>
-        <div className="maps-section">
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18951.331365742582!2d-6.140164579011137!3d53.57710823083159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486718989a1cd8d1%3A0xa00c7a997317b80!2sSkerries%2C%20Co.%20Dubl%C3%ADn!5e0!3m2!1ses!2sie!4v1749729087584!5m2!1ses!2sie"
-            width="100%"
-            height="400"
-            style={{ border: 0 }}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <iframe
+          className="location-map"
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18951.331365742582!2d-6.140164579011137!3d53.57710823083159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486718989a1cd8d1%3A0xa00c7a997317b80!2sSkerries%2C%20Co.%20Dubl%C3%ADn!5e0!3m2!1ses!2sie!4v1749729087584!5m2!1ses!2sie"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );
