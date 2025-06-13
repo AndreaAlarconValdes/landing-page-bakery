@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://andreaalarconvaldes.github.io/landing-page-bakery",
+  "homepage": "https://andreaalarconvaldes.github.io/landing-page-bakery/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
