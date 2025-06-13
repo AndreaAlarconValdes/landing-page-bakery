@@ -15,14 +15,24 @@ const Footer = () => {
             1985.
           </p>
           <div className="social-contact">
-            <img src="./github.svg" alt="" />
-            <img src="./linkedin.svg" alt="" />
+            <a href="https://github.com/AndreaAlarconValdes" target="_blank">
+              <img src="./github.svg" alt="github" />
+            </a>
+            <a href="https://www.linkedin.com/in/andreaalarconvaldes/" target="_blank">
+              <img src="./linkedin.svg" alt="linkedin" />
+            </a>
+            <a href="mailto:alarconvaldes.a@gmail.com">
+              <img src="./email.svg" alt="linkedin" />
+            </a>
           </div>
         </div>
 
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
+          <li>
+              <Link to="/">Home</Link>
+            </li>
             <li>
               <Link to="/about">About Us</Link>
             </li>
@@ -49,7 +59,9 @@ const Footer = () => {
             <img src="./email.svg" alt="" />
 
             <p>
-              <a href="mailto:alarconvaldes.a@gmail.com">alarconvaldes.a@gmail.com</a>
+              <a href="mailto:alarconvaldes.a@gmail.com">
+                alarconvaldes.a@gmail.com
+              </a>
             </p>
           </div>
         </div>
@@ -62,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Artisan Bakery – Portfolio project by
+        &copy; {new Date().getFullYear()} Fictitious Artisan Bakery – Portfolio project by
         Andrea Alarcón Valdés.
       </div>
     </footer>

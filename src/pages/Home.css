@@ -101,6 +101,9 @@
 }
 
 @media (max-width: 750px) {
+  .story-title{
+    display: none;
+  }
   .story {
     flex-direction: column;
   }

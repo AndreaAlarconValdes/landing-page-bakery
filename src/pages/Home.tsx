@@ -15,14 +15,14 @@ const Home = () => {
         linkTo="/menu"
       />
       <div className="container">
-        <div className="container-title story">
+        <div className="container-title story-title">
           <h2>Our Story</h2>
           <p>
             Three generations of passion, tradition, and innovation in every
             bite
           </p>
         </div>
-        <div className="section">
+        <div className="section story">
           {storyArray.map((item) => (
             <Card
               imageSrc={item.imageSrc}
