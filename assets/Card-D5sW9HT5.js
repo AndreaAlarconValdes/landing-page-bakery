@@ -1,0 +1,1 @@
+import{j as s}from"./index-DkW8Dm_G.js";const j=({imageSrc:c,title:r,subtitle:e,description:x,className:a="",imageStyle:d})=>s.jsxs("div",{className:`card ${a}`,children:[s.jsx("img",{src:c,alt:r,style:d}),s.jsx("h3",{children:r}),s.jsx("h4",{children:e}),s.jsx("p",{children:x})]});export{j as C};

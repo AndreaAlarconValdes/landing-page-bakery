@@ -1,1 +1,0 @@
-import{j as e,L as l}from"./index-BMDFli1X.js";const i=({hasBackground:a=!1,title:h,paragraph:d,linkText:s,linkTo:r})=>e.jsxs("header",{className:a?"header-img":"header",children:[e.jsx("h1",{className:"header-title",children:h}),e.jsx("p",{className:"header-paragraph",children:d}),a&&s&&r&&e.jsx(l,{to:r,className:"header-link",children:s})]});export{i as H};
